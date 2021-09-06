@@ -2,6 +2,15 @@
 
 $loan = (int)$_POST["loan"];
 $age = (int)$_POST["age"];
+
+if (!isset($loan)) {
+  echo '接続に失敗しました' . PHP_EOL;
+}
+
+if (!isset($age)) {
+  echo '接続に失敗しました' . PHP_EOL;
+}
+
 $now = 2021;
 
 echo '～2021';
